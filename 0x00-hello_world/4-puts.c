@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 
-int main(void)
+int main()
 {
-		string myString = "Programming is like building a multilingual puzzle";
-		puts(myString)
+		puts("Programming is like building a multilingual puzzle");
+		getchar();
 		return 0;
 }
