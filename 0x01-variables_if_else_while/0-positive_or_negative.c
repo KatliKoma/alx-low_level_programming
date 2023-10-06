@@ -2,9 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/* main - Entry point*/
-/* Description: This program generatesand testes wheather n is (+) or (-)*/
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: 'this program tests wheather n is negative or positive'
+ * @parameter: greater than 0, and less than zero
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
