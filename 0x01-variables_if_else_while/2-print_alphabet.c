@@ -3,12 +3,11 @@
 
 int main(void)
 {
-	char alph, lowAlph;
+	char alph;
 
 	for (alph = 'a'; alph >= 'a' && alph <= 'z' ; alph++)
 	{
-		lowAlph = tolower(alph);
-		putchar(lowAlph);
+		putchar(alph);
 	}
 	putchar('\n');
 	return (0);
