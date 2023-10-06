@@ -8,7 +8,7 @@ int main(void)
 	for (alph = 'a'; alph >= 'a' && alph <= 'z' ; alph++)
 	{
 		putchar(alph);
-		putchar(toupper(alph));
+		putchar(alph-32);
 	}
 	putchar('\n');
 	return (0);
