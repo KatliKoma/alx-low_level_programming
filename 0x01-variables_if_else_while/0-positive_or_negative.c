@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 /* main - Entry point*/
-/* Description: This program generatesand testes wheather numbers are positve or negative*/
+/* Description: This program generatesand testes wheather n is (+) or (-)*/
 /* betty style doc for function main goes there */
 int main(void)
 {
