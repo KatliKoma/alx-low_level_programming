@@ -2,8 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: 'The last digit'
+ *
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n, lastNum;
