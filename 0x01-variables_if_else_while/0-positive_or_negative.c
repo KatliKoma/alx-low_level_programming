@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * Description: 'this program tests wheather n is negative or positive'
- * @parameter: greater than 0, and less than zero
+ *
  *
  * Return: Always 0 (Success)
  */
