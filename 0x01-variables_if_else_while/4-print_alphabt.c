@@ -3,14 +3,14 @@
 /**
  * main - Entry point
  *
- * Description: 'When I was having that alphabet soup, I never thought that it would pay off'
+ * Description: 'More alphabets'
  *
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-        char alph;
+	char alph;
 
 	for (alph = 'a'; alph >= 'a' && alph <= 'z' ; alph++)
 	{
