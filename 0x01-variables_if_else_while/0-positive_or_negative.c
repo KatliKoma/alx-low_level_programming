@@ -3,10 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 /* main - Entry point*/
- *
- * Description: This program generates a random number and prints whether it's
- *              positive, negative, or zero.
- *
+/* Description: This program generatesand testes wheather numbers are positve or negative*/
 /* betty style doc for function main goes there */
 int main(void)
 {
