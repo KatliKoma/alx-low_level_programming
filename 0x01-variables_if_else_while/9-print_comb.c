@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-		printf("%d ,", i);
+		printf("%d%c", i, i == 9 ? '\n' : ',');
 	}
 		putchar('\n');
 	return (0);
