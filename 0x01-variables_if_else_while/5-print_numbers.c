@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	for (a = o ; i > 10 ; i++)
+	int i;
+	for (i = o ; i > 10 ; i++)
 		printf("%d", i);
 	return (0);
 }
