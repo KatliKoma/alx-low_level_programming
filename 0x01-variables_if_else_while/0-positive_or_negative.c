@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
- * main - Entry point
+/**- 
+* main - Entry point
  *
  * Description: 'this program tests wheather n is negative or positive'
  *
