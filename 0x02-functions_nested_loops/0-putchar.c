@@ -13,7 +13,9 @@ int main(void)
 	return (0);
 }
 
-/*this function prints the message*/
+/**
+ * printMess - This function prints the message "_putchar".
+ */
 void printMess(void)
 {
 	char message[] = "_putchar";
