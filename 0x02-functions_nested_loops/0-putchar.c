@@ -17,7 +17,13 @@ int main(void)
 void printMess(void)
 {
 	char message[] = "_putchar";
-	printf("%c\n", message);
+	int i = 0;
+
+	while (message[i] != '\0')
+	{
+		putchar(message[i]);
+		i++;
+	}
+	putchar('\n');
 
 }
-

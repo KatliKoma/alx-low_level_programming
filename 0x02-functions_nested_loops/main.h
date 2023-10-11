@@ -1,5 +1,7 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef MAIN_H
+#define MAIN_H
 
-//this function prints _putchar
 void printMess(void);
+
+#endif
+
