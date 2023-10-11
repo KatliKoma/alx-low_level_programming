@@ -8,13 +8,12 @@
  */
 int main(void)
 {
+	/* function called*/
 	printMess();
 	return (0);
 }
-/**
- * This function prints the message.
- *
- */
+
+/*this function prints the message*/
 void printMess(void)
 {
 	char message[] = "_putchar";
