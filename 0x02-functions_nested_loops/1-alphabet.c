@@ -9,7 +9,7 @@
  */
 
 /**
- *print_alphabet - prints the alphabet by cycling through a loop 
+ *print_alphabet prints the alphabet by cycling through a loop 
  */
 void print_alphabet(void)
 {
