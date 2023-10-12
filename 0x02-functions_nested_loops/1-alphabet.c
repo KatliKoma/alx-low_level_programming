@@ -3,17 +3,14 @@
 #include "main.h"
 
 /**
- *1-alphabet - print alphabet using putchar
+ *print_alphabet - entry point
  *
- *Return: no return.
+ *
  */
-
-/*print_alphabet prints the alphabet by cycling through a loop*/
 void print_alphabet(void)
 {
 	/*initiate char*/
 	char alph;
-
 	/*cycles throught the loop*/
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
