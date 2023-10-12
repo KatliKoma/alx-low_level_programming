@@ -3,12 +3,14 @@
 #include "main.h"
 
 /**
-*prints alphabet in lowecase
-*
-*no return
-*/
+ * 1-alphabet - print alphabet using putchar
+ *
+ * Return: no return.
+ */
 
-/*this function prints all the leters of the alphabet*/
+/**
+ * print_alphabet - prints the alphabet by cycling through a loop 
+ */
 void print_alphabet(void)
 {
 	/*initiate char*/
