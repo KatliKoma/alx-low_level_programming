@@ -3,13 +3,13 @@
 #include "main.h"
 
 /**
- * 1-alphabet - print alphabet using putchar
+ *1-alphabet - print alphabet using putchar
  *
- * Return: no return.
+ *Return: no return.
  */
 
 /**
- * print_alphabet - prints the alphabet by cycling through a loop 
+ *print_alphabet - prints the alphabet by cycling through a loop 
  */
 void print_alphabet(void)
 {
