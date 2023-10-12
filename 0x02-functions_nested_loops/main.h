@@ -2,6 +2,6 @@
 #define MAIN_H
 
 void printMess(void);
-void print_alphabet(char alph);
+void print_alphabet();
 #endif
 
