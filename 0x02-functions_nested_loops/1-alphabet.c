@@ -7,8 +7,10 @@
 
 void print_alphabet(void)
 {
+	/*initiate char*/
 	char alph;
 
+	/*cycles throught the loop*/
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		putchar(alph);
