@@ -3,11 +3,8 @@
 #include "main.h"
 /**
 *prints alphabet in lowecase
-*
-*return 0
 */
 
-/* this function print the alphabet*/
 void print_alphabet(void)
 {
 	char alph;
