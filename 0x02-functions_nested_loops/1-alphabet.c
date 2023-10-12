@@ -8,7 +8,7 @@
 */
 
 /* this function print the alphabet*/
-void print_alphabet(void)
+int print_alphabet(void)
 {
 	char alph;
 
@@ -17,5 +17,5 @@ void print_alphabet(void)
 		putchar(alph);
 	}
 	putchar('\n');
-	return;
+	return (0);
 }
