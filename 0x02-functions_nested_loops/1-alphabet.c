@@ -6,14 +6,21 @@
  *
  * no return.
  */
-void alphabet(void)
+void print_alphabet(char alph)
 {
-	char alph;
-
-	for (alph = 'a'; alph >= 'a' && alph <= 'z'; alph++)
-	{
-		putchar(alph);
-	}
-		putchar('\n');
+	putchar(alph);
+	return;
 }
 
+int main(void)
+{
+	char alphabet;
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		print_alphabet(alphabet);
+		putchar('\n');
+	}
+
+	return (0);
+}
