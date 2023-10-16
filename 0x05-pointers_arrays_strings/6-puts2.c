@@ -1,5 +1,10 @@
-#include <sdtio.h>
-
+#include <stdio.h>
+/**
+ * puts2 - half a string.
+ * @str: the string to printed
+ *
+ * Return: no return
+ */
 void puts2(char *str)
 {
 	int i;
