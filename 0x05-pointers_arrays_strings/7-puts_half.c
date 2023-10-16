@@ -2,12 +2,12 @@
 #include <stdio.h>
 /**
  * puts_half - prints half of the string
- * @s: string is printed
+ * @str: string to be printed
  */
 void puts_half(char *str)
 {
 	int length = sizeof(str);
-	int i = (length/2)+1;
+	int i = (length - 1) / 2;
 
 	while (str[i] != '\0')
 	{
