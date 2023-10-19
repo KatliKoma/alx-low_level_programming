@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 /**
  * _strncpy - copies a string.
  * @dest: is the initial string
