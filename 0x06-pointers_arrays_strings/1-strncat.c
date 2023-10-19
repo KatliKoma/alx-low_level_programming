@@ -3,7 +3,7 @@
  * _strncat - appends string.
  * @dest: is the initial string
  * @src: the string which appends to the initial string
- *
+ * @n: counter for string
  * Return: the string
  */
 char *_strncat(char *dest, char *src, int n)
