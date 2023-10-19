@@ -4,24 +4,20 @@
  *
  * Return: returns string
  */
-char *leet(char *words)
+char *leet(char *words) 
 {
 	int i = 0, j;
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
-
-	if (words[0] != '\0')
+	while (words[i])
 	{
-		do
+		for (j = 0; j <= 7; j++)
 		{
-			for (j = 0; j <= 7; j++)
+			if (words[i] == leet[j] || words[i] == (leet[j] + 32))
 			{
-				if (words[i] == leet[j] || words[i] - 32 == leet[j])
-				{
-					words[i] = j + '0';
-				}
+				words[i] = j + '0';
 			}
 		}
-		while (words[++i] != '\0');
+		i++;
 	}
 	return words;
 }
