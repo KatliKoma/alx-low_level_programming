@@ -6,8 +6,6 @@
  *
  * Return: the string
  */
-#include "main.h"
-
 char *string_toupper(char *str)
 {
 	for (int i = 0; str[i] != '\0'; i++)
