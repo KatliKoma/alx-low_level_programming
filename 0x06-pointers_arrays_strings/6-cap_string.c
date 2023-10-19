@@ -8,6 +8,7 @@ char *cap_string(char *str)
 	while (str[index])
 	{
 		char c = str[index];
+
 		switch (c)
 		{
 			case ' ':
@@ -38,6 +39,6 @@ char *cap_string(char *str)
 		index++;
 	}
 
-	return str;
+	return (str);
 }
 
