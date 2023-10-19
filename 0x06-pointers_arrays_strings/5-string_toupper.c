@@ -1,6 +1,6 @@
 /**
  * string_toupper - changes lowercase letters of a string to uppercase
- * @str: string of letters
+ * @words: letters to be changed
  *
  * Return: the string
  */
