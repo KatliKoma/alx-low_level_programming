@@ -2,8 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
-char *cap_string(char *str) 
+/**
+ * cap_string - capitalizes all words of a string.
+ * @str: string to be returned
+ *
+ * Return: the string
+ */
+char *cap_string(char *str)
 {
 	int capitalize_next = 1;
 
@@ -27,5 +32,5 @@ char *cap_string(char *str)
 		}
 	}
 
-	return str;
+	return (str);
 }
