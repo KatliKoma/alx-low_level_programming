@@ -9,7 +9,7 @@
  */
 #include "main.h"
 
-char *cap_string(char *str) 
+char *cap_string(char *str)
 {
 	int index = 0;
 	int cap_next = 1;
@@ -18,7 +18,7 @@ char *cap_string(char *str)
 	{
 		char c = str[index];
 
-		switch (c) 
+		switch (c)
 		{
 			case ' ':
 			case '\t':
@@ -43,7 +43,8 @@ char *cap_string(char *str)
 				}
 		}
 		index++;
+
 	}
-	return str;
+	return (str);
 }
 
