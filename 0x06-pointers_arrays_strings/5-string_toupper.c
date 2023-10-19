@@ -4,15 +4,17 @@
  *
  * Return: the string
  */
-char *string_toupper(char *str)
+char *string_toupper(char *words)
 {
-	for (int i = 0; str[i] != '\0'; i++)
+	int i = 0;
+
+	while (words[i++])
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (words[i] >= 'a' && words[i] <= 'z')
 		{
-			str[i] = str[i] - 'a' + 'A';
+			words[i] -= 32;
 		}
 	}
-	return (str);
-}
 
+	return (words);
+}
