@@ -9,4 +9,5 @@ void print_array(int *a, int n);
 char *cap_string(char *);
 char *string_toupper(char *);
 int _putchar(char c);
+char *leet(char *str);
 #endif
