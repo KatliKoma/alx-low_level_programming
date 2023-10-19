@@ -1,6 +1,11 @@
 #include <stdio.h>
-
-
+/**
+ * _strncat - appends string.
+ * @dest: is the initial string
+ * @src: the string which appends to the initial string
+ *
+ * Return: the string
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	char *result = dest;
