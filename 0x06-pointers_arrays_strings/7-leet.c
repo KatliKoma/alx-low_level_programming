@@ -4,10 +4,11 @@
  *
  * Return: returns string
  */
-char *leet(char *words) 
+char *leet(char *words)
 {
 	int i = 0, j;
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+
 	while (words[i])
 	{
 		for (j = 0; j <= 7; j++)
@@ -19,6 +20,6 @@ char *leet(char *words)
 		}
 		i++;
 	}
-	return words;
+	return (words);
 }
 
