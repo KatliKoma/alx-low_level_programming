@@ -1,4 +1,4 @@
-#include <stddef.h>
+#include <string.h>
 /**
  * _strchr -locates a character in a string
  * @s:Pointer to the null-terminated string to be searched.
@@ -7,14 +7,5 @@
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
-	{
-		if (*s == c)
-	{
-		return (s);
-	}
-		s++;
-	}
-
-	return (NULL);
+	return(strchr(s, c));
 }
