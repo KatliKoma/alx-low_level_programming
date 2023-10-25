@@ -1,18 +1,29 @@
+#include "holberton.h"
 #include <stdio.h>
+
 /**
- * print_diagsums -rints the sum of the two diagonals.
- * @a: array
- * @size: array size.
- * Return:no return
+ * print_diagsums - prints the sum of the two diagonals of
+ * a square matrix of integers
+ *
+ * @a: matrix
+ * @size: size of matrix
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-void print_diagsums(int a[][5], int size)
+void print_diagsums(int *a, int size)
 {
-	int sum_primary = 0;
-	int sum_secondary = 0;
-	for (int i = 0; i < size; i++)
+	int i, j, total;
+
+	for (i = 0, j = 0, total = 0; i < size; i++, j += size)
 	{
-		sum_primary += a[i][i];
-		sum_secondary += a[i][size - i - 1];
+		total = total + *(a + (i + j));
+		printf("%i, ", total);
 	}
-	printf("%d, %d\n", sum_primary, sum_secondary);
+
+	for (i = 0, j = size - 1, total = 0; i < size; i++, j += size - 2)
+	{
+		total += *(a + (i + j));
+		printf("%i\n", total);
+	}
 }
