@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -13,17 +12,21 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, total;
+	int i, total1, total2;
 
-	for (i = 0, j = 0, total = 0; i < size; i++, j += size)
+	total1 = 0;
+	total2 = 0;
+
+	for (i = 0; i < size; i++)
 	{
-		total = total + *(a + (i + j));
-		printf("%i, ", total);
+		total1 += a[i * size + i];
+		total2 += a[i * size + (size - i - 1)];
 	}
 
-	for (i = 0, j = size - 1, total = 0; i < size; i++, j += size - 2)
-	{
-		total += *(a + (i + j));
-		printf("%i\n", total);
-	}
+	putchar(total1 + '0');
+	putchar(',');
+	putchar(' ');
+	putchar(total2 + '0');
+	putchar('\n');
 }
+
