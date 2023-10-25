@@ -2,7 +2,7 @@ int is_prime_recursive(int number, int divisor);
 
 /**
  * is_prime_number - Checks if a number is a prime.
- * @number: The number to check for primality.
+ * @n: The number to check for primality.
  *
  * Return: 1 if number is prime, 0 otherwise.
  */
@@ -28,6 +28,6 @@ int is_prime_recursive(int number, int divisor)
 		return (1);
 	if (number % divisor == 0)
 		return (0);
-	else
+
 	return (is_prime_recursive(number, divisor - 1));
 }
