@@ -20,7 +20,7 @@ int square_root(int guess, int number)
  *
  * Return: natural square root or -1
  */
-int find_square_root(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
