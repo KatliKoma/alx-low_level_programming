@@ -15,7 +15,7 @@ int square_root(int guess, int number)
 }
 
 /**
- * find_square_root - returns the natural square root of a number
+ * _sqrt_recursion - returns the natural square root of a number
  * @n: integer to find the square root of
  *
  * Return: natural square root or -1
