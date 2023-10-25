@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen_recursion - length of a string.
  *@s:string to be counted
