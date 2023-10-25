@@ -1,5 +1,3 @@
-int is_prime_recursive(int number, int divisor);
-
 /**
  * is_prime_number - Checks if a number is a prime.
  * @n: The number to check for primality.
