@@ -1,12 +1,15 @@
 #include <stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
 
-	printf("%s\n", __FILE__);
+/**
+ * main - prints its name, and line
+ * @argCount:  count as an argument
+ * @argv:  vector as an argument
+ *
+ * Return: 0
+ */
+int main(int argCount, char *argv[])
+{
+	printf("%s\n", argv[0]);
+	(void)argCount;
 	return (0);
 }
