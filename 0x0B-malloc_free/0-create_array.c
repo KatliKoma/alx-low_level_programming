@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * custom_create_array - array of chars, and initializes it with a  char.
+ * create_array - array of chars, and initializes it with a  char.
  * @size: the size of the array to create
  * @c: the character to initialize the array with.
  * Return: NULL if size is 0 or if it fails to allocate memory.
