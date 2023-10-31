@@ -9,7 +9,7 @@
  * Return: NULL if size is 0 or if it fails to allocate memory.
  */
 
-char *custom_create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *newArray = NULL;
 	unsigned int index;
