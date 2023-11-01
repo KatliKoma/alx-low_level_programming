@@ -27,12 +27,11 @@ int main(int argc, char **argv)
 
 	if (num2 == 0)
 	{
-		for (int i = 0; "Error: Division by zero\n"[i] != '\0'; i++)
-		{
-			_putchar("Error: Division by zero\n"[i]);
-		}
+		_putchar('0');
+		_putchar('\n');
 	return (2);
 	}
+
 
 	int result = num1 * num2;
 
