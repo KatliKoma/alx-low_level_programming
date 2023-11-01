@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - rints all arguments it receives.
  * @argc: The count of arguments for numbering
