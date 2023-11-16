@@ -1,15 +1,17 @@
+global _start
+
 section .data
-   hello_message db 'Hello, Holberton', 0
+	msg: db "Hello, Holberton\n"
 
 section .text
-   global main
-   extern printf
-section .note.GNU-stack noexecstack
-main:
-   mov rdi, hello_message
-   call printf
+_start:
+	mov rax, 1 ; sys_write
+	mov rdi, 1 ; stdout
+	mov rsi, msg ; message
+	mov rdx, 14 ; message length
+	syscall
 
-   mov rax, 60        ; syscall: exit
-   xor rdi, rdi       ; status: 0
-   syscall
+	mov rax, 60 ; sys_exit
+	mov rdi, 0 ; exit status
+	syscall
 
