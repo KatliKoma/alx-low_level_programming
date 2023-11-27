@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-
+#include "main.h"
 #define BUFFER_SIZE 1024
 
 /**
@@ -69,4 +69,17 @@ void copy_file(const char *source_file, const char *destination_file)
 	{
 		print_error_and_exit(100, "Error: Can't close fd %d\n", fd_to);
 	}
+}
+
+int main(int argc, char *argv[])
+{
+
+	if (argc != 3)
+	{
+		print_error_and_exit(97, "Usage: %s file_from file_to\n", argv[0]);
+	}
+
+	copy_file(argv[1], argv[2]);
+
+	return (0);
 }
