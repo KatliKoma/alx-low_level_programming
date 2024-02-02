@@ -8,13 +8,13 @@
  */
 void replace_value(hash_node_t **ht, const char *key, const char *value)
 {
-    hash_node_t *temp = *ht;
+	hash_node_t *temp = *ht;
 
-    while (temp && strcmp(temp->key, key))
-        temp = temp->next;
+	while (temp && strcmp(temp->key, key))
+		temp = temp->next;
 
-    free(temp->value);
-    temp->value = strdup(value);
+	free(temp->value);
+	temp->value = strdup(value);
 }
 
 /**
@@ -24,16 +24,17 @@ void replace_value(hash_node_t **ht, const char *key, const char *value)
  *
  * Return: 1 if the key is found, 0 otherwise.
  */
+
 int check_key(hash_node_t *ht, const char *key)
 {
-    while (ht)
-    {
-        if (!strcmp(ht->key, key))
-            return (1);
-        ht = ht->next;
-    }
+	while (ht)
+	{
+		if (!strcmp(ht->key, key))
+			return (1);
 
-    return (0);
+		ht = ht->next;
+	}
+	return (0);
 }
 
 /**
@@ -44,29 +45,31 @@ int check_key(hash_node_t *ht, const char *key)
  *
  * Return: The address of the new element, or NULL if it fails.
  */
+
 hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 {
-    hash_node_t *new;
+	hash_node_t *new;
 
-    new = malloc(sizeof(hash_node_t));
-    if (!new)
-        return (NULL);
+	new = malloc(sizeof(hash_node_t));
 
-    new->key = strdup(key);
-    new->value = strdup(value);
+	if (!new)
+		return (NULL);
 
-    if (*head == NULL)
-    {
-        (*head) = new;
-        new->next = NULL;
-    }
-    else
-    {
-        new->next = (*head);
-        (*head) = new;
-    }
+	new->key = strdup(key);
+	new->value = strdup(value);
 
-    return (*head);
+	if (*head == NULL)
+	{
+		(*head) = new;
+		new->next = NULL;
+	}
+	else
+	{
+		new->next = (*head);
+		(*head) = new;
+	}
+
+	return (*head);
 }
 
 /**
@@ -77,25 +80,26 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
  *
  * Return: 1 if the operation succeeds, 0 otherwise.
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-    unsigned long int index;
+	unsigned long int index;
 
-    if (!ht || !key || !strcmp(key, "") || !value)
-        return (0);
+	if (!ht || !key || !strcmp(key, "") || !value)
+		return (0);
 
-    index = key_index((unsigned char *)key, ht->size);
+	index = key_index((unsigned char *)key, ht->size);
 
-    if (check_key(ht->array[index], key))
-    {
-        replace_value(&ht->array[index], key, value);
-        return (1);
-    }
-    
-    add_node(&ht->array[index], key, value);
-    
-    if (ht->array[index] == NULL)
-        return (0);
-    
-    return (1);
+	if (check_key(ht->array[index], key))
+	{
+		replace_value(&ht->array[index], key, value);
+		return (1);
+	}
+
+	add_node(&ht->array[index], key, value);
+
+	if (ht->array[index] == NULL)
+		return (0);
+
+	return (1);
 }
