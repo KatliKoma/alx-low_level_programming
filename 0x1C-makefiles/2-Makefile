@@ -1,0 +1,29 @@
+# The compiler to be used
+CC=gcc
+
+# The source files
+SRC=main.c school.c
+
+# Convert source files (.c) to object files (.o)
+OBJ=$(SRC:.c=.o)
+
+# The name of the executable
+NAME=school
+
+# The all rule to build the executable
+all: $(NAME)
+
+# Rule to link the object files into the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Rule to compile source files into object files
+%.o: %.c
+	$(CC) -c -o $@ $<
+
+# Clean rule for removing object files and the executable
+clean:
+	rm -f $(OBJ) $(NAME)
+
+# Rule for cleaning everything and then building from scratch
+re: clean all
