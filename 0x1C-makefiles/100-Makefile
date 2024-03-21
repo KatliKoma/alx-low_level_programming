@@ -1,0 +1,37 @@
+# Compiler
+CC=gcc
+# Source files discovery
+SRC=$(wildcard *.c)
+# Object files derived from SRC
+OBJ=$(SRC:.c=.o)
+# Executable name
+NAME=school
+# Deletion command
+RM=/bin/rm -f
+# Compiler flags
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+# The all rule for building the executable
+all: $(NAME)
+
+# Rule to compile the executable
+$(NAME): $(SRC) m.h
+	$(CC) $(SRC) -o $(NAME) $(CFLAGS)
+
+# Clean rule for Emacs/Vim temporary files and the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Rule for removing object files, utilizing a shell command for deletion to comply with restrictions
+oclean:
+	/bin/rm -f *.o
+
+# Full clean: Emacs/Vim temp files, executable, and object files
+fclean: clean
+	/bin/rm -f *.o
+
+# Rebuild the project by forcing a remake of all components
+re: fclean all
+
+# Marking rules as phony
+.PHONY: all clean fclean oclean re

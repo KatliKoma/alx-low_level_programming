@@ -1,41 +1,30 @@
-# Compiler and deletion program
 CC=gcc
+SRC=main.c school.c
+# Automatically deduce the object files
+OBJ=$(SRC:.c=.o)
+NAME=school.c
 RM=rm -f
-
-# Compiler flags
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
-# Source and object files
-SRC=main.c school.c
-OBJ=$(SRC:.c=.o)
-
-# Name of the executable
-NAME=school
-
-# Default rule
+# The all rule
 all: $(NAME)
 
-# Compile and link the program
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+# Rule for creating the executable
+$(NAME): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
-# Compile objects from sources
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-# Clean Emacs and Vim temporary files and the executable
+# The clean rule
 clean:
-	$(RM) *~ school
+	$(RM) *~ $(NAME)
 
-# Clean object files
+# The oclean rule
 oclean:
 	$(RM) $(OBJ)
 
-# Full clean: temporary files, executable, and objects
+# The fclean rule
 fclean: clean oclean
 
-# Rebuild the project
+# The re rule
 re: fclean all
 
-# Prevent make from doing something with a file named like a rule
 .PHONY: all clean fclean oclean re
