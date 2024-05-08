@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * advanced_binary_recursive - Recursive function to perform advanced binary search
+ * rec_search - Recursive function to perform advanced binary search
  * @array: Pointer to the first element of the array to search in.
- * @low: The lowest index of the current subarray.
- * @high: The highest index of the current subarray.
+ * @size: Number of elements in the array.
  * @value: The value to search for.
  *
  * Return: The index of the first occurrence of value in the array,
  *         or -1 if the value is not present.
  */
+
 int rec_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
